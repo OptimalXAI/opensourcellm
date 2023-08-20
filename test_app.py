@@ -1,7 +1,7 @@
 import requests
 
 # Base URL of the API
-base_url = 'http://localhost:5000'  # Replace with the actual URL where your API is running
+base_url = 'http://127.0.0.1:5000'  # Replace with the actual URL where your API is running
 
 # Test data
 user_data = {
