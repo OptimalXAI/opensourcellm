@@ -1,3 +1,16 @@
+from flask import Flask, request, jsonify
 
-def multiple(a,b):
-    return a*b
+
+app = Flask(__name__)
+
+
+# Create (POST) operation
+@app.route('/user', methods=['POST'])
+def create_user():
+    data = request.get_json()  
+    
+    return jsonify(data), 201
+
+# Run the Flask app
+if __name__ == '__main__':    
+    app.run(host='0.0.0.0')
